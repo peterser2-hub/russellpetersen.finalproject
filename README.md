@@ -21,9 +21,18 @@ Q: Has rising global tempurature effected fly hatches in the PNW?
 
 
 # Week 10 Update 
-I will be completing project on my own.
-My topic is looking at the relationship between pitch location and type, and batter ball or at bat result from my own Trackman data. Trackman is a tool that we use to measure pitch flight and batted ball flight. 
-I am planning on using Velocity, Spinrate, Pitch Movement, Pitch Locatoin, Exit Velocity, Batted Ball result, and Launch Angle. The pros of this data is that it is all in one website I have access. The cons is that it is data from my own practices, so there is more potential for biases in the data as the sample size is smaller. 
-Q1: Does Pitch Location effect launch angle?
-Q2: Does Pitch Velocity effect contact result?
-Q3: What pitch sequences yielded the best results?
+I will be completing this project on my own.
+My topic is looking at the what is the most effective arsenal to have in the major leagues? Grouping pitchers by arsenal into categories, and then comparing xwOBA, K%-BB%, and Whiff%. 
+I am planning on using pitch types, Walk Rate, K Rate, xWOBA, and whiff%. The pros of this data is that it is all in one website I have access to called Baseball Savant. The con is the potential size of the data as it will only be looking at starting pitcher data. 
+Q1: Does Pitch arsenal effect K-BB%?
+Q2: Does Pitch arsenal effect xWOBA?
+Q3: Does Pitch arsenal effect Whiff rate
+
+
+# Week 11 Update
+https://colab.research.google.com/drive/1-pZy-RPxPNMhwLK_qUt6-7xKBy_1pcc-?usp=sharing
+The data source that I decided to work with was from the website Baseball Savant. Baseball Savant houses all mlb stastical and trackman ball flight data. In order to aquire the data I put all of the information I wanted into a spreadsheet on the website, and then downloaded it as a CSV file.
+Future Considerations;
+- How only looking at starting pitchers, as opposed to relievers may skew my findings
+- What other stastics than the 3 I chose are indicative of a successful pitcher.
+The cleaning/wrangling that I still have yet to do is to group the pitchers by pitch use rate to determine distinct arsenal categories. I do not forsee any roadblocks at the moment. That is not to say any won't come up that I am not currently aware of. 
