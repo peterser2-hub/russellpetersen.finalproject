@@ -37,3 +37,6 @@ Future Considerations;
 - What other stastics than the 3 I chose are indicative of a successful pitcher.
 
 The cleaning/wrangling that I still have yet to do is to group the pitchers by pitch use rate to determine distinct arsenal categories. I do not forsee any roadblocks at the moment. That is not to say any won't come up that I am not currently aware of. 
+
+
+# Week 12 Update
