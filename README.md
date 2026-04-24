@@ -40,3 +40,9 @@ The cleaning/wrangling that I still have yet to do is to group the pitchers by p
 
 
 # Week 12 Update
+<iframe
+  src="Stats.html"
+  width="100%"
+  height="600"
+  frameborder="0">
+</iframe>
