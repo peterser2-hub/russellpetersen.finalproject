@@ -46,3 +46,5 @@ The cleaning/wrangling that I still have yet to do is to group the pitchers by p
   height="600"
   frameborder="0">
 </iframe>
+
+I have yet to do the grouping that I intend to do for pitchers based on pitch usage, however I did create this initial interactive visualization. This 3D plot gives viewers the opportunity to see which pitchers were the most dominant in the 2025 season, to sort of confirm their ideas of who and what kind of pitchers had the most success. When looking at this visualization the first thing that you are able to determine is that Strikout Minus Walk rate appears to have a very strong correlation with xWOBA (The lead statistic I am looking at to determine a pitchers success). Another trend I am noticing in my data so far is that pitch Velocity has a very high correlation with a pitchers success. 
