@@ -21,16 +21,49 @@
         }
         h1 {
             color: #0366d6;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 36px;
+            font-weight: 700;
+        }
+        h2 {
+            color: #0366d6;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #0366d6;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
         }
         .description {
             font-size: 16px;
-            line-height: 1.5;
+            line-height: 1.6;
             margin-bottom: 30px;
             color: #586069;
         }
         .description p {
             margin: 15px 0;
+        }
+        .section-description {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #586069;
+        }
+        .section-description p {
+            margin: 12px 0;
+        }
+        .metric-item {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 10px 0 10px 20px;
+            color: #586069;
+        }
+        .metric-label {
+            font-weight: 600;
+            color: #24292e;
         }
         .iframe-container {
             margin-top: 40px;
@@ -48,28 +81,42 @@
             border-top: 2px solid #e1e4e8;
             padding-top: 30px;
         }
-        .visualization-section h2 {
-            color: #0366d6;
-            font-size: 20px;
-            margin-bottom: 15px;
+        .info-sections {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .info-section {
+            border-top: 2px solid #e1e4e8;
+            padding-top: 30px;
+        }
+        .info-section h2 {
+            margin-bottom: 20px;
+        }
+        .info-section p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            color: #586069;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>MLB Pitcher Arsenal Analysis ~ Russell Petersen </h1>
+        <h1>MLB Pitcher Arsenal Analysis ~ Russell Petersen</h1>
         <div class="description">
             <p>
-                This project uses 2025 MLB data of 125 starting pitchers from the website Baseball Savant to investigate how a pitcher's pitch arsenal — the types and mix of pitches they throw — affects key performance metrics. Many Major League Pitchers are said to be one adjustment or one pitch away from being one of the best in the league and this project takes a deep dive into if that claim really holds true.
+                This project uses 2025 MLB data of 125 starting pitchers from the website Baseball Savant to investigate how a pitcher's pitch arsenal — the types and mix of pitches they throw — affects their overall pitching performance and effectiveness. By analyzing pitch selection, movement characteristics, and performance metrics, we can better understand which pitch combinations lead to success in Major League Baseball.
             </p>
-                
         </div>
         
         <div class="visualizations">
             <div class="visualization-section">
-                <h2>Paul Skenes </h2>
-                </p> 
-                    This scatter plot displays MLB pitcher Paul Skenes' pitch movement profile, showing how each of his six pitches moves through the air relative to a pitch thrown with no spin. The horizontal axis measures sideways break in inches (positive = arm-side, negative = glove-side), while the vertical axis measures rise or drop in inches. 
+                <h2>Paul Skenes</h2>
+                <div class="section-description">
+                    <p>This scatter plot displays MLB pitcher Paul Skenes' pitch movement profile, showing how each of his six pitches moves through the air relative to a pitch thrown with no spin. The horizontal axis represents induced vertical break (IVB), while the vertical axis represents horizontal break (HB). Each pitch type is color-coded to help distinguish between different pitches in his arsenal.</p>
+                </div>
                 <div class="iframe-container">
                     <iframe src="https://peterser2-hub.github.io/russellpetersen.finalproject/paul_skenes.html" width="100%" height="600px" frameborder="0"></iframe>
                 </div>
@@ -77,9 +124,10 @@
 
             <div class="visualization-section">
                 <h2>Pitcher Categories</h2>
-            </p> To better understand how different pitching styles impact performance, pitchers were categorized into distinct groups based on their primary pitch types and usage percentages. This process involved analyzing the proportion of each pitch thrown, such as four-seam fastballs, sinkers, changeups, and breaking balls. Each pitcher was assessed against a set of predefined thresholds, which identified their most frequently used pitches and their overall arsenal composition.
-            </p> Pitchers were then assigned to a group, with a specific order of evaluation to ensure accurate classification. For instance, pitchers demonstrating high usage of a particular off-speed pitch, like a changeup, were first identified as 'Changeup Specialists'. Others were grouped based on combinations of their fastball types with secondary pitches, such as 'Four Seam + Sweeper' or 'Cutter/Sinker'. Pitchers with a diverse mix of several pitches, none dominating, were categorized into a 'Big Arsenal' group, ensuring that each pitcher found their most fitting category within the defined pitching styles.
-
+                <div class="section-description">
+                    <p><strong>Categorization Framework:</strong> To better understand how different pitching styles impact performance, pitchers were categorized into distinct groups based on their primary pitch types and usage percentages. This provides a systematic way to group pitchers with similar arsenal compositions.</p>
+                    <p><strong>Classification Process:</strong> Pitchers were then assigned to a group, with a specific order of evaluation to ensure accurate classification. For instance, pitchers demonstrating high usage of a particular off-speed pitch would be classified accordingly. This visualization displays how pitchers cluster based on their arsenal characteristics, revealing natural groupings within professional baseball.</p>
+                </div>
                 <div class="iframe-container">
                     <iframe src="https://peterser2-hub.github.io/russellpetersen.finalproject/strikezone.html" width="100%" height="600px" frameborder="0"></iframe>
                 </div>
@@ -87,14 +135,39 @@
 
             <div class="visualization-section">
                 <h2>Results</h2>
-            </p> This is how each pitch arsenal performed across key statistical categories: Expected Weighted On-Base Average (xWOBA), Strikeout Minus Walk Percentage (K-BB%), Whiff Percentage (Whiff%), and Average Exit Velocity. 
-            </p>    xWOBA: measures the quality of contact a pitcher allows; a lower xWOBA indicates they are limiting hitters to weaker outcomes. 
-            </p>    K-BB%: reflects a pitcher's command and swing-and-miss ability, with higher percentages being more desirable as they show a greater ability to strike out batters while minimizing walks. 
-            </p>    Whiff%: directly quantifies how often batters swing and miss at pitches, highlighting a pitcher's raw stuff and ability to generate swings and misses. 
-            </p>    Average Exit Velocity: indicates the average speed of batted balls against a pitcher; lower values suggest they induce weaker contact. By analyzing these metrics together, we can identify unique performance profiles for each pitcher group, revealing their strengths and weaknesses and helping to understand their overall effectiveness.
+                <div class="section-description">
+                    <p><strong>Performance Metrics Overview:</strong> This is how each pitch arsenal performed across key statistical categories: Expected Weighted On-Base Average (xWOBA), Strikeout Minus Walk Percentage (K-BB%), Whiff Percentage (Whiff%), and Average Exit Velocity.</p>
+                    <div class="metric-item"><span class="metric-label">xWOBA:</span> Measures the quality of contact a pitcher allows; a lower xWOBA indicates they are limiting hitters to weaker outcomes.</div>
+                    <div class="metric-item"><span class="metric-label">K-BB%:</span> Reflects a pitcher's command and swing-and-miss ability, with higher percentages being more desirable as they show a greater ability to strike out batters while minimizing walks.</div>
+                    <div class="metric-item"><span class="metric-label">Whiff%:</span> Directly quantifies how often batters swing and miss at pitches, highlighting a pitcher's raw stuff and ability to generate swings and misses.</div>
+                    <div class="metric-item"><span class="metric-label">Average Exit Velocity:</span> Indicates the average speed of batted balls against a pitcher; lower values suggest they induce weaker contact. By analyzing these metrics together, we can identify which pitch arsenals produce the strongest performance outcomes.</div>
+                </div>
                 <div class="iframe-container">
                     <iframe src="https://peterser2-hub.github.io/russellpetersen.finalproject/4dscatterplot.html" width="100%" height="800px" frameborder="0"></iframe>
                 </div>
+            </div>
+        </div>
+
+        <div class="info-sections">
+            <div class="info-section">
+                <h2>Summary</h2>
+                <p>
+                    This analysis demonstrates the critical relationship between pitcher arsenal composition and performance outcomes in Major League Baseball. Through categorization and statistical analysis of 125 starting pitchers, patterns emerge showing how different pitch selections and combinations correlate with success metrics such as xWOBA, K-BB%, Whiff%, and exit velocity. Understanding these relationships provides valuable insights into pitching strategy and effectiveness at the highest levels of professional baseball.
+                </p>
+            </div>
+
+            <div class="info-section">
+                <h2>Considerations</h2>
+                <p>
+                    It is important to note that this analysis represents a snapshot of the 2025 MLB season data from Baseball Savant. Performance metrics can vary significantly based on sample size, opponent quality, ballpark characteristics, and numerous other contextual factors. Additionally, pitch arsenal composition is just one component of overall pitcher success—execution, pitcher health, defense, and other variables also play crucial roles. The categorizations used in this analysis are simplified representations of complex pitcher profiles and should be interpreted with these limitations in mind.
+                </p>
+            </div>
+
+            <div class="info-section">
+                <h2>Acknowledgements</h2>
+                <p>
+                    This project would not have been possible without the comprehensive baseball statistics and data provided by Baseball Savant (baseball-savant.com), which offers detailed pitch-level data, movement profiles, and performance metrics for MLB players. Special thanks to Major League Baseball and the pitchers whose data made this analysis possible. Additional credit goes to the data visualization and web development communities for the tools and libraries that enabled the creation of these interactive visualizations.
+                </p>
             </div>
         </div>
     </div>
