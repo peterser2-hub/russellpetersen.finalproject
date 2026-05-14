@@ -35,6 +35,21 @@
             border-radius: 6px;
             overflow: hidden;
         }
+        .visualizations {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .visualization-section {
+            border-top: 2px solid #e1e4e8;
+            padding-top: 30px;
+        }
+        .visualization-section h2 {
+            color: #0366d6;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
@@ -44,8 +59,27 @@
             This project uses 2025 MLB starting pitcher data from the website Baseball Savant to investigate how a pitcher's pitch arsenal — the types and mix of pitches they throw — affects key p[...]
         </p>
         
-        <div class="iframe-container">
-            <iframe src="https://peterser2-hub.github.io/russellpetersen.finalproject/paul_skenes.html" width="100%" height="600px" frameborder="0"></iframe>
+        <div class="visualizations">
+            <div class="visualization-section">
+                <h2>Paul Skenes Analysis</h2>
+                <div class="iframe-container">
+                    <iframe src="https://peterser2-hub.github.io/russellpetersen.finalproject/paul_skenes.html" width="100%" height="600px" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <div class="visualization-section">
+                <h2>4D Scatter Plot</h2>
+                <div class="iframe-container">
+                    <iframe src="https://peterser2-hub.github.io/russellpetersen.finalproject/4dscatterplot.html" width="100%" height="600px" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <div class="visualization-section">
+                <h2>Strike Zone Analysis</h2>
+                <div class="iframe-container">
+                    <iframe src="https://peterser2-hub.github.io/russellpetersen.finalproject/strikezone.html" width="100%" height="600px" frameborder="0"></iframe>
+                </div>
+            </div>
         </div>
     </div>
 </body>
