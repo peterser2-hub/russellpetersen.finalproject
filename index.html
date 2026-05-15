@@ -100,6 +100,23 @@
             margin-bottom: 12px;
             color: #586069;
         }
+        .info-section a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        .info-section a:hover {
+            text-decoration: underline;
+        }
+        .glossary-item {
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 12px 0;
+            color: #586069;
+        }
+        .glossary-label {
+            font-weight: 600;
+            color: #24292e;
+        }
     </style>
 </head>
 <body>
@@ -107,7 +124,7 @@
         <h1>MLB Pitcher Arsenal Analysis ~ Russell Petersen</h1>
         <div class="description">
             <p>
-                This project uses 2025 MLB data of 125 starting pitchers from the website Baseball Savant to investigate how a pitcher's pitch arsenal — the types and mix of pitches they throw — affects their overall pitching performance and effectiveness. By analyzing pitch selection, movement characteristics, and performance metrics, we can better understand which pitch combinations lead to success in Major League Baseball.
+                This project uses 2025 MLB data of 125 starting pitchers from the website Baseball Savant to investigate how a pitcher's pitch arsenal — the types and mix of pitches they throw — a[...]
             </p>
         </div>
         
@@ -115,7 +132,7 @@
             <div class="visualization-section">
                 <h2>Paul Skenes</h2>
                 <div class="section-description">
-                    <p>This scatter plot displays MLB pitcher Paul Skenes' pitch movement profile, showing how each of his six pitches moves through the air relative to a pitch thrown with no spin. The horizontal axis represents induced vertical break (IVB), while the vertical axis represents horizontal break (HB). Each pitch type is color-coded to help distinguish between different pitches in his arsenal.</p>
+                    <p>This scatter plot displays MLB pitcher Paul Skenes' pitch movement profile, showing how each of his six pitches moves through the air relative to a pitch thrown with no spin. Th[...]
                 </div>
                 <div class="iframe-container">
                     <iframe src="https://peterser2-hub.github.io/russellpetersen.finalproject/paul_skenes.html" width="100%" height="600px" frameborder="0"></iframe>
@@ -125,8 +142,8 @@
             <div class="visualization-section">
                 <h2>Pitcher Categories</h2>
                 <div class="section-description">
-                    <p><strong>Categorization Framework:</strong> To better understand how different pitching styles impact performance, pitchers were categorized into distinct groups based on their primary pitch types and usage percentages. This provides a systematic way to group pitchers with similar arsenal compositions.</p>
-                    <p><strong>Classification Process:</strong> Pitchers were then assigned to a group, with a specific order of evaluation to ensure accurate classification. For instance, pitchers demonstrating high usage of a particular off-speed pitch would be classified accordingly. This visualization displays how pitchers cluster based on their arsenal characteristics, revealing natural groupings within professional baseball.</p>
+                    <p><strong>Categorization Framework:</strong> To better understand how different pitching styles impact performance, pitchers were categorized into distinct groups based on their p[...]
+                    <p><strong>Classification Process:</strong> Pitchers were then assigned to a group, with a specific order of evaluation to ensure accurate classification. For instance, pitchers de[...]
                 </div>
                 <div class="iframe-container">
                     <iframe src="https://peterser2-hub.github.io/russellpetersen.finalproject/strikezone.html" width="100%" height="600px" frameborder="0"></iframe>
@@ -136,11 +153,11 @@
             <div class="visualization-section">
                 <h2>Results</h2>
                 <div class="section-description">
-                    <p><strong>Performance Metrics Overview:</strong> This is how each pitch arsenal performed across key statistical categories: Expected Weighted On-Base Average (xWOBA), Strikeout Minus Walk Percentage (K-BB%), Whiff Percentage (Whiff%), and Average Exit Velocity.</p>
-                    <div class="metric-item"><span class="metric-label">xWOBA:</span> Measures the quality of contact a pitcher allows; a lower xWOBA indicates they are limiting hitters to weaker outcomes.</div>
-                    <div class="metric-item"><span class="metric-label">K-BB%:</span> Reflects a pitcher's command and swing-and-miss ability, with higher percentages being more desirable as they show a greater ability to strike out batters while minimizing walks.</div>
-                    <div class="metric-item"><span class="metric-label">Whiff%:</span> Directly quantifies how often batters swing and miss at pitches, highlighting a pitcher's raw stuff and ability to generate swings and misses.</div>
-                    <div class="metric-item"><span class="metric-label">Average Exit Velocity:</span> Indicates the average speed of batted balls against a pitcher; lower values suggest they induce weaker contact. By analyzing these metrics together, we can identify which pitch arsenals produce the strongest performance outcomes.</div>
+                    <p><strong>Performance Metrics Overview:</strong> This is how each pitch arsenal performed across key statistical categories: Expected Weighted On-Base Average (xWOBA), Strikeout M[...]
+                    <div class="metric-item"><span class="metric-label">xWOBA:</span> Measures the quality of contact a pitcher allows; a lower xWOBA indicates they are limiting hitters to weaker outc[...]
+                    <div class="metric-item"><span class="metric-label">K-BB%:</span> Reflects a pitcher's command and swing-and-miss ability, with higher percentages being more desirable as they show[...]
+                    <div class="metric-item"><span class="metric-label">Whiff%:</span> Directly quantifies how often batters swing and miss at pitches, highlighting a pitcher's raw stuff and ability t[...]
+                    <div class="metric-item"><span class="metric-label">Average Exit Velocity:</span> Indicates the average speed of batted balls against a pitcher; lower values suggest they induce we[...]
                 </div>
                 <div class="iframe-container">
                     <iframe src="https://peterser2-hub.github.io/russellpetersen.finalproject/4dscatterplot.html" width="100%" height="800px" frameborder="0"></iframe>
@@ -151,27 +168,37 @@
         <div class="info-sections">
             <div class="info-section">
                 <h2>Summary</h2>
-                <p> Predicting and analyzing success in Major League Baseball is always going to be a dificult task, which is why organizations spend millions annually trying to hire the best minds to get the most out of their players. In doing this analysis I was able to point out a couple of interesting trends; 
-- Pitchers who throw an even usage of a lot of different pitchers landed in the middle of all of the performance statistics. This makes sense as different pitches typically generate different contact quality relative to spin, velocity etc., and this group of pitchers didn’t rely on any one more than the other.
-- By far and away the most succesful group was the four seam changeup/splitter group that threw their fastballs at a higher than 25% usage rate, and their offspeed at a higher than 20% usage rate. This group led in K-BB rate, xWOBA and whiff rate, as well as had an average exit velocity of 89.0 that ranked them tied for second best. 
-- Heavy fast ball usage groups had some of the lowest whiff rates, which makes sense as these pitches tend to have the least amount of induced movement. What was suprising however was that these groups were not higher on the K-BB rate, as I would have expected them to be an easier arsenal to control. 
-                </p>
+                <p>Predicting and analyzing success in Major League Baseball is always going to be a difficult task, which is why organizations spend millions annually trying to hire the best minds to[...]</p>
+                <div class="metric-item">
+                    Pitchers who throw an even usage of a lot of different pitchers landed in the middle of all of the performance statistics. This makes sense as different pitches typically generate different contact[...]
+                </div>
+                <div class="metric-item">
+                    By far and away the most successful group was the four seam changeup/splitter group that threw their fastballs at a higher than 25% usage rate, and their offspeed at a higher than 20% usage rate. Thi[...]
+                </div>
+                <div class="metric-item">
+                    Heavy fast ball usage groups had some of the lowest whiff rates, which makes sense as these pitches tend to have the least amount of induced movement. What was surprising however was that these group[...]
+                </div>
             </div>
 
             <div class="info-section">
                 <h2>Considerations</h2>
-                <p> This project took a look into starting pitcher data from the 2025 mlb season. Had this analysis included all qualified relief pitchers as well, the data likely would have told a different story. Relief pitchers often rely on smaller pitch mixes to get opposing hitters out as they rarely have to face a lineup more than once in a given outing. Relief pitchers are also more likely to have outlier pitch shapes as many of them throw from sidearm and even submarine arm slots. 
-
-                </p>
+                <p>This project took a look into starting pitcher data from the 2025 MLB season. Had this analysis included all qualified relief pitchers as well, the data likely would have told a di[...]</p>
             </div>
 
             <div class="info-section">
                 <h2>Glossary</h2>
-                <p> xWOBA: https://www.mlb.com/glossary/statcast/expected-woba
-                    K - BB: https://library.fangraphs.com/offense/rate-stats/
-                    Whiff rate: https://blakemurphy.com/2012/10/10/whiff-strikeout-rates-explained/
-                    Exit Velocity: https://www.mlb.com/glossary/statcast/exit-velocity
-                </p>
+                <div class="glossary-item">
+                    <span class="glossary-label">xWOBA:</span> <a href="https://www.mlb.com/glossary/statcast/expected-woba" target="_blank">Expected Weighted On-Base Average</a>
+                </div>
+                <div class="glossary-item">
+                    <span class="glossary-label">K-BB%:</span> <a href="https://library.fangraphs.com/offense/rate-stats/" target="_blank">Strikeout to Walk Percentage</a>
+                </div>
+                <div class="glossary-item">
+                    <span class="glossary-label">Whiff%:</span> <a href="https://www.fangraphs.com/library/pitching/whiff/" target="_blank">Whiff Rate</a>
+                </div>
+                <div class="glossary-item">
+                    <span class="glossary-label">Exit Velocity:</span> <a href="https://www.mlb.com/glossary/statcast/exit-velocity" target="_blank">Exit Velocity</a>
+                </div>
             </div>
         </div>
     </div>
